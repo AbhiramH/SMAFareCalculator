@@ -25,8 +25,8 @@ csv({
         }
 
         let trip = TripService.createTrip(
-            tripInfoArray[0],
-            tripInfoArray[1],
+            tripInfoArray[0].toLowerCase(),
+            tripInfoArray[1].toLowerCase(),
             tripInfoArray[2]
         );
 
