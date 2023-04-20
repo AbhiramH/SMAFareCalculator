@@ -80,6 +80,6 @@ module.exports = {
             dailyRemains = caps.DAY - farecapTally.DAY,
             weeklyRemains = caps.WEEK - farecapTally.WEEK;
         
-        return Math.min(0, dailyRemains, weeklyRemains);
+        return Math.min(dailyRemains, weeklyRemains);
     }
 };

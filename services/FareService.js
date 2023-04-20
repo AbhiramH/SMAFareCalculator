@@ -53,7 +53,7 @@ module.exports = {
         
         let remainingAmountForFareCap = FareCapService.getRemainingAmountForFareCap(user, trip);
 
-        if (baseFare >= remainingAmountForFareCap) {
+        if (baseFare < remainingAmountForFareCap) {
             return baseFare;
         }
         else {
